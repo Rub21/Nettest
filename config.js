@@ -1,10 +1,10 @@
 var Settings = {
-  Logo            : "iflogo.jpg",	// URL to logo image 
-  MinimumDlSpeed  : 100,			// Required download speed in kbit/s
-  MinimumUlSpeed  : 300,          // Required upload speed in kbit/s
-  MaximumTime     : 180,			// Required response time (milliseconds)
-  RequestCount    : 20,			// Number of requests to perform
-  Debug           : true			// true, if detailed output of the test run needs to be shown, otherwise false
+  Logo            : "header-logo.png",	// URL to logo image 
+  MinimumDlSpeed  : 100,	// Required download speed in kbit/s
+  MinimumUlSpeed  : 100,        // Required upload speed in kbit/s
+  MaximumTime     : 300,	// Required response time (milliseconds)
+  RequestCount    : 20,		// Number of requests to perform
+  Debug           : true	// true, if detailed output of the test run needs to be shown, otherwise false
 };
 var Strings = {
   StartTest       : "Iniciar prueba",
