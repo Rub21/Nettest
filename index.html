@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="themes/base/ui.all.css"/>
 <script type="text/javascript" src="jquery-1.3.1.min.js"></script>
 <script type="text/javascript" src="jquery.query-2.0.1.js"></script>
@@ -79,7 +80,7 @@ function WebClientRequest( method, url )
 				if( e.status == 200 )
 					return; // We do get here in IE7 on Vista, even though the request performed well..
 				if( e.status == 405 )
-					alert( "Your web server does not allow HTTP POST to this HTML file.\nPlease review your configuration." );
+					alert( "Su servidor no permite el uso de HTTP POST hacia este archivo HTML.\nPor favor, revise su configuración." );
 			} 
 		} );
 
@@ -599,26 +600,26 @@ $( function()
     </div>
     </div>
 	<div id="technicalDetails">
-		Download speed: <span id="currentdlspeed"></span>
-        &nbsp;(required minimum: <span id="requireddlspeed"></span>)
+		Celeridad de descarga: <span id="currentdlspeed"></span>
+        &nbsp;(mínimo requerido: <span id="requireddlspeed"></span>)
 		<br/>
-		Upload speed: <span id="currentulspeed"></span>
-		&nbsp;(required minimum: <span id="requiredulspeed"></span>)
+		Celeridad de subida: <span id="currentulspeed"></span>
+		&nbsp;(mínimo requerido: <span id="requiredulspeed"></span>)
 		<br/>
-        Response time: <span id="currenttime"></span>
-        &nbsp;(required maximum: <span id="requiredtime"></span>)
+        Tiempo de respuesta: <span id="currenttime"></span>
+        &nbsp;(máximo requerido: <span id="requiredtime"></span>)
         <br/>
     <table width="100%" border="0">
 		<thead>
 			<tr>
-				<td>Test</td>
-				<td>Transfer Time</td>
+				<td>Prueba</td>
+				<td>Tiempo de transferencia</td>
 				<td>Ping</td>
-				<td>Host</td>
-				<td>Path</td>
+				<td>Huésped</td>
+				<td>Ruta</td>
 				<td>Bytes</td>
-				<td>Status</td>
-				<td>Speed</td>
+				<td>Estado</td>
+				<td>Celeridad</td>
 			</tr>
 		</thead>
 		<tbody id="tblSample">
